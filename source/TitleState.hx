@@ -265,7 +265,7 @@ class TitleState extends MusicBeatState
 		add(titleText);
 		
 		titleText2 = new FlxSprite(650, FlxG.height * 0.8);
-		titleText.frames2 = Paths.getSparrowAtlas('title/PlayText');
+		titleText2.frames = Paths.getSparrowAtlas('title/PlayText');
 		titleText2.setGraphicSize(Std.int(titleText.width * 0.7));
 		titleText2.antialiasing = ClientPrefs.globalAntialiasing;
 		titleText2.updateHitbox();

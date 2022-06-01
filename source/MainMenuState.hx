@@ -71,7 +71,7 @@ class MainMenuState extends MusicBeatState
 		add(menuItems);
 		
         storymode = new FlxSprite(-100, -400).loadGraphic(Paths.image('mainmenu/opened/Storymode'));
-		menuItems.add(story_mode);
+		menuItems.add(storymode);
 		storymode.scrollFactor.set();
 		storymode.antialiasing = ClientPrefs.globalAntialiasing;
 		storymode.setGraphicSize(Std.int(freeplay.width * 0.7));
@@ -231,7 +231,7 @@ class MainMenuState extends MusicBeatState
 			case 'freeplay':
 				MusicBeatState.switchState(new FreeplayState());
 			case 'options':
-				MusicBeatState.switchState(new OptionsState());
+				LoadingState.loadAndSwitchState(new options.OptionsState());
 			case 'credits':
 				MusicBeatState.switchState(new CreditsState());	
 			case 'awards':
