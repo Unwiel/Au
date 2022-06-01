@@ -298,7 +298,7 @@ class TitleState extends MusicBeatState
 		logoBl.updateHitbox();
 		logoBl.scale.set(0.6, 0.6);
 		logoBl.y = 100;		
-		logoBl.x -= 200;		
+		logoBl.x += 100;		
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
@@ -355,7 +355,7 @@ class TitleState extends MusicBeatState
 		titleText.animation.play('idle');
 		titleText.updateHitbox();
 		titleText.y += 200;		
-	    titleText.x += 200;		
+	    titleText.x += 100;		
 		// titleText.screenCenter(X);
 		add(titleText);
 		
