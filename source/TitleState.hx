@@ -381,7 +381,7 @@ class TitleState extends MusicBeatState
 		bendy.y -= 350;		
 	    bendy.x += 380;		
 		add(bendy);
-                add(logoBl)
+                add(logoBl);
 
 		// FlxTween.tween(logoBl, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG});
 		// FlxTween.tween(logo, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 0.1});
