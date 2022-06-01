@@ -291,7 +291,6 @@ class TitleState extends MusicBeatState
 		
 		logoBl.frames = Paths.getSparrowAtlas('title/Logo');
 		#end
-		add(logoBl); 
 		logoBl.antialiasing = ClientPrefs.globalAntialiasing;
 		logoBl.animation.addByPrefix('bump', 'Tween 11 instance 1', 24, false);
 		logoBl.animation.play('bump');
@@ -329,7 +328,7 @@ class TitleState extends MusicBeatState
 		gfDance.x -= 100;		
 		add(gfDance);
 		gfDance.shader = swagShader.shader;
-		
+		add(logoBl)
 		//logoBl.shader = swagShader.shader;
 
 		titleText = new FlxSprite(titleJSON.startx, titleJSON.starty);
