@@ -253,7 +253,7 @@ class TitleState extends MusicBeatState
 		bendy.y += 200;
 		bendy.updateHitbox();
 		add(bendy); 
-        add(logoBl);
+                add(logoBl);
         
 		titleText = new FlxSprite(650, FlxG.height * 0.8);
 		titleText.frames = Paths.getSparrowAtlas('title/Playbutton');
@@ -302,12 +302,6 @@ class TitleState extends MusicBeatState
 		logoSpr.screenCenter(X);
 		logoSpr.antialiasing = ClientPrefs.globalAntialiasing;
 		
-		FlxTween.angle(cuphead, -10, 10, 1, { type: FlxTween.PINGPONG, ease: FlxEase.quadInOut}); 
-        FlxTween.angle(snas, -10, 10, 1, { type: FlxTween.PINGPONG, ease: FlxEase.quadInOut});
-		FlxTween.angle(bendy, -10, 10, 1, { type: FlxTween.PINGPONG, ease: FlxEase.quadInOut});
-
-    
-
 		if (initialized)
 			skipIntro();
 		else
