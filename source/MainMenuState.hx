@@ -220,8 +220,7 @@ class MainMenuState extends MusicBeatState
 		}
 
 		var lerpVal:Float = CoolUtil.boundTo(elapsed * 7.5, 0, 1);
-		camFollowPos.setPosition(FlxMath.lerp(camFollowPos.x, camFollow.x, lerpVal), FlxMath.lerp(camFollowPos.y, camFollow.y, lerpVal));
-
+	
 		if (!selectedSomethin)
 		{
 			if (controls.UI_UP_P)
@@ -296,7 +295,7 @@ class MainMenuState extends MusicBeatState
 					});
 				}
 			}
-			else if (FlxG.keys.anyJustPressed(debugKeys) 
+			else if (FlxG.keys.anyJustPressed(debugKeys)) 
 			{
 				selectedSomethin = true;
 				MusicBeatState.switchState(new MasterEditorMenu());
