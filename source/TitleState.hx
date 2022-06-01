@@ -296,9 +296,9 @@ class TitleState extends MusicBeatState
 		logoBl.animation.addByPrefix('bump', 'Tween 11 instance 1', 24, false);
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
-		logoBL.scale.set(0.6, 0.6);
-		logoBL.y = 100;		
-		logoBL.x -= 200;		
+		logoBl.scale.set(0.6, 0.6);
+		logoBl.y = 100;		
+		logoBl.x -= 200;		
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
