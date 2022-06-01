@@ -295,9 +295,9 @@ class TitleState extends MusicBeatState
 		logoBl.animation.addByPrefix('bump', 'Tween 11 instance 1', 24, false);
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
-		logoBL.scale.set(6, 6);
-		logoBL.y = 100;		
-		logoBL.x -= 200;		
+		logoBl.scale.set(6, 6);
+		logoBl.y = 100;		
+		logoBl.x -= 200;		
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
@@ -328,7 +328,7 @@ class TitleState extends MusicBeatState
 		gfDance.x -= 100;		
 		add(gfDance);
 		gfDance.shader = swagShader.shader;
-		add(logoBl)
+		
 		//logoBl.shader = swagShader.shader;
 
 		titleText = new FlxSprite(titleJSON.startx, titleJSON.starty);
@@ -381,6 +381,7 @@ class TitleState extends MusicBeatState
 		bendy.y -= 350;		
 	    bendy.x += 380;		
 		add(bendy);
+                add(logoBl)
 
 		// FlxTween.tween(logoBl, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG});
 		// FlxTween.tween(logo, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 0.1});
