@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="sketch.png" width="1924" height="2075">
+  <SubTexture name="menu bru0000" x="940" y="935" width="933" height="1139" rotated="true"  frameX="-783" frameY="-149" frameWidth="1924" frameHeight="1084"/>
+  <SubTexture name="menu bru0001" x="0" y="0"  width="1144" height="935" frameX="-778" frameY="-147" frameWidth="1924" frameHeight="1084"/>
+  <SubTexture name="menu bru0002" x="0" y="935" width="940" height="1140" rotated="true"  frameX="-782" frameY="-142" frameWidth="1924" frameHeight="1084"/>
+</TextureAtlas>

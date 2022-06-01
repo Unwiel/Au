@@ -1,0 +1,21 @@
+{
+	"songs": [
+		["final-stretch", "cup", [165, 0, 77]], 
+		["burning-in-hell", "cup", [165, 0, 77]]
+	],
+
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "stage",
+
+	"storyName": "",
+	"weekBefore": "tutorial",
+	"weekName": "Tutorial",
+	"startUnlocked": true,
+
+	"hideStoryMode": true,
+	"hideFreeplay": false
+}

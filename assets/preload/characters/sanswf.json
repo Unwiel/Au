@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				59,
+				3
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Left Tired instance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				-13
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Down Tired instance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				45,
+				28
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Up Tired instance",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Sans FNF Tired instance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				1
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Right Tired instance",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/SansWF",
+	"position": [
+		0,
+		100
+	],
+	"healthicon": "sans",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		0
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

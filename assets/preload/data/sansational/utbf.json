@@ -1,0 +1,111 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "0Idle"
+		},
+		{
+			"offsets": [
+				-32,
+				-8
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "0EEEE"
+		},
+		{
+			"offsets": [
+				4,
+				-11
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "0EERR"
+		},
+		{
+			"offsets": [
+				-5,
+				-28
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "0Ouu"
+		},
+		{
+			"offsets": [
+				-33,
+				27
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "0UPPP"
+		},
+		{
+			"offsets": [
+				33,
+				69
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "ouch",
+			"indices": [],
+			"name": "Ouch instance"
+		},
+		{
+			"offsets": [
+				33,
+				134
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "pee",
+			"indices": [],
+			"name": "Pee instance"
+		},
+		{
+			"offsets": [
+				189,
+				192
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "roses",
+			"indices": [],
+			"name": "Roses got me like instance"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/UT BF",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		248,
+		255,
+		2
+	],
+	"camera_position": [
+		0,
+		280
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

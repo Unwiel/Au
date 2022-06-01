@@ -1,0 +1,122 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "EReree ee"
+		},
+		{
+			"offsets": [
+				5,
+				27
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "UpUT"
+		},
+		{
+			"offsets": [
+				51,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "LeftUT"
+		},
+		{
+			"offsets": [
+				10,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "DownUT"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				12,
+				-1
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "RightUT",
+			"indices": []
+		}, 
+		{
+			"offsets": [
+				5,
+				27
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "UpUT"
+		},
+		{
+			"offsets": [
+				51,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "LeftUT"
+		},
+		{
+			"offsets": [
+				10,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "DownUT"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				12,
+				-1
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "RightUT",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Sans_but_Rip_colors",
+	"position": [
+		0,
+		110
+	],
+	"healthicon": "sans",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		0
+	],
+	"camera_position": [
+		200,
+		400
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

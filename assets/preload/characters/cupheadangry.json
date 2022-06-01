@@ -1,0 +1,133 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "1 instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				5,
+				-14
+			],
+			"anim": "shoot",
+			"fps": 24,
+			"name": "DIE BITCH instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				136,
+				-9
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Left instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-22,
+				-40
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Down instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				30,
+				126
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Up instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-16,
+				22
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Right instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				124,
+				-40
+			],
+			"anim": "singPewLEFT",
+			"fps": 24,
+			"name": "Pewleft instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				-39
+			],
+			"anim": "singPewDOWN",
+			"fps": 24,
+			"name": "pewdown instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				39,
+				76
+			],
+			"anim": "singPewUP",
+			"fps": 24,
+			"name": "PewUp instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-15,
+				21
+			],
+			"anim": "singPewRight",
+			"fps": 24,
+			"name": "PewRight instance 1",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Cuphead Pissed",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "cuppissed",
+	"flip_x": false,
+	"healthbar_colors": [
+		215,
+		35,
+		106
+	],
+	"camera_position": [
+		-200,
+		-170
+	],
+	"sing_duration": 6.1,
+	"scale": 1.7
+}

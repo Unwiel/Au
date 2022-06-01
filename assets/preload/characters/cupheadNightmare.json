@@ -1,0 +1,133 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Idle instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-22,
+				-236
+			],
+			"anim": "shoot",
+			"fps": 24,
+			"name": "Beamm instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				168,
+				-104
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Left instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				19,
+				-73
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Down  instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				118,
+				97
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Up instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				22,
+				-55
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Right instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				111,
+				-123
+			],
+			"anim": "singPewLEFT",
+			"fps": 24,
+			"name": "ShootLeft instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				45,
+				-73
+			],
+			"anim": "singPewDOWN",
+			"fps": 24,
+			"name": "ShootDown instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				103,
+				-17
+			],
+			"anim": "singPewUP",
+			"fps": 24,
+			"name": "ShootUp instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				17,
+				-56
+			],
+			"anim": "singPewRight",
+			"fps": 24,
+			"name": "ShootRight instance 1",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Nightmare_Cuphead",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "cupdeath",
+	"flip_x": false,
+	"healthbar_colors": [
+		215,
+		35,
+		106
+	],
+	"camera_position": [
+		-200,
+		100
+	],
+	"sing_duration": 6.1,
+	"scale": 1.45
+}
