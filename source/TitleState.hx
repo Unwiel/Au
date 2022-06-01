@@ -291,13 +291,14 @@ class TitleState extends MusicBeatState
 		
 		logoBl.frames = Paths.getSparrowAtlas('title/Logo');
 		#end
+		add(logoBl); 
 		logoBl.antialiasing = ClientPrefs.globalAntialiasing;
 		logoBl.animation.addByPrefix('bump', 'Tween 11 instance 1', 24, false);
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
-		logoBl.scale.set(6, 6);
-		logoBl.y = 100;		
-		logoBl.x -= 200;		
+		logoBL.scale.set(0.6, 0.6);
+		logoBL.y = 100;		
+		logoBL.x -= 200;		
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
@@ -324,7 +325,7 @@ class TitleState extends MusicBeatState
 			gfDance.animation.addByIndices('danceRight', 'BF idle dance instance 1', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
 	
 		gfDance.antialiasing = ClientPrefs.globalAntialiasing;
-		gfDance.y += 100;		
+		gfDance.y -= 150;		
 		gfDance.x -= 100;		
 		add(gfDance);
 		gfDance.shader = swagShader.shader;
@@ -353,35 +354,36 @@ class TitleState extends MusicBeatState
 		titleText.antialiasing = ClientPrefs.globalAntialiasing;
 		titleText.animation.play('idle');
 		titleText.updateHitbox();
+		titleText.y += 200;		
+	    titleText.x += 200;		
 		// titleText.screenCenter(X);
 		add(titleText);
 		
 
 		var logo:FlxSprite = new FlxSprite().loadGraphic(Paths.image('title/PlayText'));
 		logo.antialiasing = ClientPrefs.globalAntialiasing;
-		logo.y -= 400;		
-	    logo.x += 500;		
+		logo.y += 200;		
+	    logo.x += 200;		
 		add(logo);
 		
 		
         var sans:FlxSprite = new FlxSprite().loadGraphic(Paths.image('title/SansCircle'));
 		sans.antialiasing = ClientPrefs.globalAntialiasing;
 		sans.y -= 200;		
-	    sans.x += 100;		
+	    sans.x += 50;		
 		add(sans);
 		
 		var cup:FlxSprite = new FlxSprite().loadGraphic(Paths.image('title/CupCircle'));
 		cup.antialiasing = ClientPrefs.globalAntialiasing;
-		cup.y -= 50;		
+		cup.y -= 150;		
 	    cup.x += 250;		
 		add(cup);
 		
 		var bendy:FlxSprite = new FlxSprite().loadGraphic(Paths.image('title/BendyCircle'));
 		bendy.antialiasing = ClientPrefs.globalAntialiasing;
 		bendy.y -= 350;		
-	    bendy.x += 380;		
+	    bendy.x += 450;		
 		add(bendy);
-                add(logoBl);
 
 		// FlxTween.tween(logoBl, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG});
 		// FlxTween.tween(logo, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 0.1});

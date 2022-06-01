@@ -86,49 +86,49 @@ class MainMenuState extends MusicBeatState
 		add(bg);
 		
 		storymode = new FlxSprite(-100, -400).loadGraphic(Paths.image('mainmenu/opened/Storymode'));
-		menuItems.add(storymode);
 		storymode.scrollFactor.set();
 		storymode.antialiasing = ClientPrefs.globalAntialiasing;
-		storymode.setGraphicSize(Std.int(freeplay.width * 0.7));
+		storymode.setGraphicSize(Std.int(storymode.width * 0.7));
 		storymode.y += 230;		
 		storymode.x -= 200;
 		storymode.alpha = 0.60;
+		add(storymode);
 		
 		freeplay = new FlxSprite(-100, -400).loadGraphic(Paths.image('mainmenu/opened/Freeplay'));
-		menuItems.add(freeplay);
 		freeplay.scrollFactor.set();
 		freeplay.antialiasing = ClientPrefs.globalAntialiasing;
 		freeplay.setGraphicSize(Std.int(freeplay.width * 0.7));
 		freeplay.y += 230;		
 		freeplay.x -= 200;
 		freeplay.alpha = 0.60;
+		add(freeplay);
 
 		options = new FlxSprite(-100, -400).loadGraphic(Paths.image('mainmenu/opened/Options'));
-		menuItems.add(options);
 		options.scrollFactor.set();
 		options.antialiasing = ClientPrefs.globalAntialiasing;
 		options.setGraphicSize(Std.int(options.width * 0.7));
 		options.y += 230;
 		options.x -= 200;
 		options.alpha = 0.60;
+		add(options);
 
 		credits = new FlxSprite(-100, -400).loadGraphic(Paths.image('mainmenu/opened/Credits'));
-		menuItems.add(credits);
 		credits.scrollFactor.set();
 		credits.antialiasing = ClientPrefs.globalAntialiasing;
 		credits.setGraphicSize(Std.int(credits.width * 0.7));
 		credits.y += 230;
 		credits.x -= 200;
 		credits.alpha = 0.60;
+		add(credits);
 
 		awards = new FlxSprite(-100, -400).loadGraphic(Paths.image('mainmenu/opened/Achievements'));
-		menuItems.add(awards);
 		awards.scrollFactor.set();
 		awards.antialiasing = ClientPrefs.globalAntialiasing;
 		awards.setGraphicSize(Std.int(awards.width * 0.7));
 		awards.y += 230;
 		awards.x -= 200;
-		awards.alpha = 0.60;				
+		awards.alpha = 0.60;			
+        add(awards);	
 
 		var sketch:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('mainmenu/sketch/sketch'));
 		sketch.frames = Paths.getSparrowAtlas('mainmenu/sketch/sketch');
@@ -172,7 +172,7 @@ class MainMenuState extends MusicBeatState
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
-		var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
+		var versionShit:FlxText = new FlxText(12, FlxG.height - 24, 0, "Indie Cross Psych Port' v" + Application.current.meta.get('version'), 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
@@ -296,7 +296,7 @@ class MainMenuState extends MusicBeatState
 					});
 				}
 			}
-			else if (FlxG.keys.anyJustPressed(debugKeys)#if android || _virtualpad.buttonE.justPressed #end)
+			else if (FlxG.keys.anyJustPressed(debugKeys) 
 			{
 				selectedSomethin = true;
 				MusicBeatState.switchState(new MasterEditorMenu());
