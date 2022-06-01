@@ -291,7 +291,7 @@ class TitleState extends MusicBeatState
 		
 		logoBl.frames = Paths.getSparrowAtlas('title/Logo');
 		#end
-		
+		add(logoBl); 
 		logoBl.antialiasing = ClientPrefs.globalAntialiasing;
 		logoBl.animation.addByPrefix('bump', 'Tween 11 instance 1', 24, false);
 		logoBl.animation.play('bump');
@@ -376,7 +376,6 @@ class TitleState extends MusicBeatState
 		cup.y -= 50;		
 	    cup.x += 250;		
 		add(cup);
-		add(logoBl); 
 		
 		var bendy:FlxSprite = new FlxSprite().loadGraphic(Paths.image('title/BendyCircle'));
 		bendy.antialiasing = ClientPrefs.globalAntialiasing;
