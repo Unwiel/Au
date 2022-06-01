@@ -296,6 +296,9 @@ class TitleState extends MusicBeatState
 		logoBl.animation.addByPrefix('bump', 'Tween 11 instance 1', 24, false);
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
+		logoBL.scale.set(6, 6);
+		logoBL.y = 100;		
+		logoBL.x -= 200;		
 		// logoBl.screenCenter();
 		// logoBl.color = FlxColor.BLACK;
 
@@ -322,9 +325,11 @@ class TitleState extends MusicBeatState
 			gfDance.animation.addByIndices('danceRight', 'BF idle dance instance 1', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
 	
 		gfDance.antialiasing = ClientPrefs.globalAntialiasing;
+		gfDance.y += 100;		
+		gfDance.x -= 100;		
 		add(gfDance);
 		gfDance.shader = swagShader.shader;
-		add(logoBl);
+		
 		//logoBl.shader = swagShader.shader;
 
 		titleText = new FlxSprite(titleJSON.startx, titleJSON.starty);
@@ -355,7 +360,29 @@ class TitleState extends MusicBeatState
 
 		var logo:FlxSprite = new FlxSprite().loadGraphic(Paths.image('title/PlayText'));
 		logo.antialiasing = ClientPrefs.globalAntialiasing;
+		logo.y -= 400;		
+	    logo.x += 500;		
 		add(logo);
+		
+		
+        var sans:FlxSprite = new FlxSprite().loadGraphic(Paths.image('title/SansCircle'));
+		sans.antialiasing = ClientPrefs.globalAntialiasing;
+		sans.y -= 200;		
+	    sans.x += 100;		
+		add(sans);
+		
+		var cup:FlxSprite = new FlxSprite().loadGraphic(Paths.image('title/CupCircle'));
+		cup.antialiasing = ClientPrefs.globalAntialiasing;
+		cup.y -= 50;		
+	    cup.x += 250;		
+		add(cup);
+		add(logoBl); 
+		
+		var bendy:FlxSprite = new FlxSprite().loadGraphic(Paths.image('title/BendyCircle'));
+		bendy.antialiasing = ClientPrefs.globalAntialiasing;
+		bendy.y -= 350;		
+	    bendy.x += 380;		
+		add(bendy);
 
 		// FlxTween.tween(logoBl, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG});
 		// FlxTween.tween(logo, {y: logoBl.y + 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 0.1});
