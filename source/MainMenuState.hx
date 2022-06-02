@@ -37,7 +37,6 @@ class MainMenuState extends MusicBeatState
 		'freeplay',
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
-		#if !switch 'donate', #end
 		'options'
 	];
 
@@ -45,7 +44,7 @@ class MainMenuState extends MusicBeatState
 	var camFollow:FlxObject;
 	var camFollowPos:FlxObject;
 	var debugKeys:Array<FlxKey>;
-	var storymode:FlxSprite;
+	var story_mode:FlxSprite;
 	var freeplay:FlxSprite;
 	var options:FlxSprite;
 	var credits:FlxSprite;
@@ -81,14 +80,14 @@ class MainMenuState extends MusicBeatState
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 		
-		storymode = new FlxSprite(-100, -400).loadGraphic(Paths.image('mainmenu/opened/Storymode'));
-		menuItems.add(storymode);
-		storymode.scrollFactor.set();
-		storymode.antialiasing = ClientPrefs.globalAntialiasing;
-		storymode.setGraphicSize(Std.int(storymode.width * 0.7));
-		storymode.y += 230;		
-		storymode.x -= 200;
-		storymode.alpha = 0.60;
+		story_mode = new FlxSprite(-100, -400).loadGraphic(Paths.image('mainmenu/opened/Storymode'));
+		menuItems.add(story_mode);
+		story_mode.scrollFactor.set();
+		story_mode.antialiasing = ClientPrefs.globalAntialiasing;
+		story_mode.setGraphicSize(Std.int(story_mode.width * 0.7));
+		story_mode.y += 230;		
+		story_mode.x -= 200;
+		story_mode.alpha = 0.60;
 
 		freeplay = new FlxSprite(-100, -400).loadGraphic(Paths.image('mainmenu/opened/Freeplay'));
 		menuItems.add(freeplay);
@@ -238,11 +237,7 @@ class MainMenuState extends MusicBeatState
 
 			if (controls.ACCEPT)
 			{
-				if (optionShit[curSelected] == 'donate')
-				{
-					CoolUtil.browserLoad('https://ninja-muffin24.itch.io/funkin');
-				}
-				else
+				
 				{
 					selectedSomethin = true;
 					FlxG.sound.play(Paths.sound('confirmMenu'));
@@ -312,27 +307,31 @@ class MainMenuState extends MusicBeatState
         switch (optionShit[curSelected])
 		{
 		    case 'story_mode':
-		        storymode.alpha = 1;  
+		        story_mode.alpha = 1;  
 				freeplay.alpha = 0.6; 
 				awards.alpha = 0.6;				
 				credits.alpha = 0.6;  
 				options.alpha = 0.6; 	 
 			case 'freeplay':
+			    story_mode.alpha = 0.6;   
 				freeplay.alpha = 1; 
 				awards.alpha = 0.6;				
 				credits.alpha = 0.6;  
 				options.alpha = 0.6; 				
-			case 'options':			
+			case 'options':
+                story_mode.alpha = 0.6;  			
 				options.alpha = 1; 
 				freeplay.alpha = 0.6;
 				awards.alpha = 0.6;  
 				credits.alpha = 0.6; 
 			case 'credits':		
+			    story_mode.alpha = 0.6;  
 				credits.alpha = 1; 
 				options.alpha = 0.6; 
 				freeplay.alpha = 0.6;
 				awards.alpha = 0.6;  
 			case 'awards':	
+			    story_mode.alpha = 0.6;  
 				awards.alpha = 1;				
 				credits.alpha = 0.6; 
 				options.alpha = 0.6; 
