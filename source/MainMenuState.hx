@@ -255,7 +255,7 @@ class MainMenuState extends MusicBeatState
 				{
 					goToState(); 
 				}
-                else if (curSelected == 2) 
+                                else if (curSelected == 2) 
 				{
 					goToState(); 
 				}
@@ -290,7 +290,7 @@ class MainMenuState extends MusicBeatState
 			case 'freeplay':
 				MusicBeatState.switchState(new FreeplayState());
 			case 'options':
-				MusicBeatState.switchState(new OptionsState());
+				MusicBeatState.switchState(new options.OptionsState());
 			case 'credits':
 				MusicBeatState.switchState(new CreditsState());	
 			case 'awards':
@@ -316,13 +316,13 @@ class MainMenuState extends MusicBeatState
 				credits.alpha = 0.6;  
 				options.alpha = 0.6; 	 
 			case 'freeplay':
-			    story_mode.alpha = 0.6;   
+			        story_mode.alpha = 0.6;   
 				freeplay.alpha = 1; 
 				awards.alpha = 0.6;				
 				credits.alpha = 0.6;  
 				options.alpha = 0.6; 				
 			case 'options':
-                story_mode.alpha = 0.6;  			
+                                story_mode.alpha = 0.6;  			
 				options.alpha = 1; 
 				freeplay.alpha = 0.6;
 				awards.alpha = 0.6;  
